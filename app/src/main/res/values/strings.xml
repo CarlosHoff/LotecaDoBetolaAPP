@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Loteca do Betola</string>
+    <string name="botao_entrar">Entrar</string>
+    <string name="texto_cadastro">Crie uma conta clicando <b>aqui</b></string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="digite_seu_email">Digite seu e-mail</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="digite_seu_celular">Digite seu celular</string>
+    <string name="digite_seu_cpf">Digite seu CPF</string>
+    <string name="botao_cadastrar">Cadastre-se</string>
+    <string name="campos_obrigatorios">É necessário preencher todos os campos obrigatórios</string>
+    <string name="carlos">CARLOS</string>
+</resources>

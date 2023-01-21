@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/fundo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="7dp">
+
+        <TextView
+            android:id="@+id/dezena1"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:text="01"/>
+
+        <TextView
+            android:id="@+id/dezena2"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:layout_toEndOf="@id/dezena1"
+            android:text="02"/>
+
+        <TextView
+            android:id="@+id/dezena3"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:layout_toEndOf="@id/dezena2"
+            android:text="03"/>
+
+        <TextView
+            android:id="@+id/dezena4"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:layout_toEndOf="@id/dezena3"
+            android:text="04"/>
+
+        <TextView
+            android:id="@+id/dezena5"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:layout_toEndOf="@id/dezena4"
+            android:text="05"/>
+
+        <TextView
+            android:id="@+id/dezena6"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:layout_toEndOf="@id/dezena5"
+            android:text="06"/>
+
+        <TextView
+            android:id="@+id/dezena7"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:layout_toEndOf="@id/dezena6"
+            android:text="07"/>
+
+        <TextView
+            android:id="@+id/dezena8"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:layout_toEndOf="@id/dezena7"
+            android:text="08"/>
+
+        <TextView
+            android:id="@+id/dezena9"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:layout_toEndOf="@id/dezena8"
+            android:text="09"/>
+
+        <TextView
+            android:id="@+id/dezena10"
+            style="@style/botao_apost_view_style"
+            android:background="@drawable/layout_numero_aposta"
+            android:layout_toEndOf="@id/dezena9"
+            android:text="10"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

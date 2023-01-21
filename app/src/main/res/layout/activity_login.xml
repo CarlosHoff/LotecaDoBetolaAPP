@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_aplicativo"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logobetola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/container_view"
+        style="@style/container_components_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"/>
+
+    <EditText
+        android:id="@+id/email_login"
+        style="@style/edit_text_style"
+        android:maxLength="25"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:drawableRight="@drawable/ic_email"
+        app:layout_constraintStart_toStartOf="@id/container_view"
+        app:layout_constraintEnd_toEndOf="@id/container_view"
+        app:layout_constraintTop_toTopOf="@id/container_view"/>
+
+    <EditText
+        android:id="@+id/senha_login"
+        style="@style/edit_text_style"
+        android:maxLength="25"
+        android:inputType="numberPassword"
+        android:hint="Senha"
+        android:drawableRight="@drawable/ic_senha"
+        app:layout_constraintStart_toStartOf="@id/container_view"
+        app:layout_constraintEnd_toEndOf="@id/container_view"
+        app:layout_constraintTop_toBottomOf="@id/email_login"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_entrar"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/senha_login"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_view" />
+
+    <TextView
+        android:id="@+id/texto_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_cadastro"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
